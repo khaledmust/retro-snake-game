@@ -16,8 +16,8 @@
 Color Green = {173, 204, 96, 255};
 Color DarkGreen = {43, 52, 24, 255};
 
-st_gameobject_food_t myFood;
-st_gameobject_snake_t mySnake;
+Food myFood;
+Snake mySnake;
 
 Vector2 pos = {.x = 5, .y = 9};
 Vector2 pos2 = {.x = 6, .y = 9};
@@ -31,7 +31,7 @@ int main(void) {
 
   /* Setting up the game speed, so as to run the same on all platforms. */
   SetTargetFPS(GameSpeed);
-  GameObject_Food_Init(&myFood);
+  Food_Init(&myFood);
   GameObject_Snake_Init(&mySnake);
 
     mySnake.AppendToTail(&(mySnake), &pos);
@@ -90,7 +90,7 @@ int main(void) {
   /* Destroy the window after the game exits. */
   CloseWindow();
 
-  GambeObject_Food_Deinit(&myFood);
+  Food_Deinit(&myFood);
 
   /* Exit status. */
   return 0;
