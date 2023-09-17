@@ -7,22 +7,7 @@
 Vector2 SnakeDirection[4] = {
     {.x = 0, .y = -1}, {.x = 0, .y = 1}, {.x = 1, .y = 0}, {.x = -1, .y = 0}};
 
-void Food_Init(Food *self) {
-  self->position.x = (float)GetRandomValue(0, 24);
-  self->position.y = (float)GetRandomValue(0, 24);
-  self->color = WHITE;
-  self->ImagePath = "Graphics/food.png";
-  Image tmp_image = LoadImage(self->ImagePath);
-  self->texture = LoadTextureFromImage(tmp_image);
-  UnloadImage(tmp_image);
-  self->Draw = DrawTexture;
-}
-
-void Food_Deinit(Food *self) {
-  UnloadTexture(self->texture);
-}
-
-void GameObject_Snake_AppendTail(Snake *self, void *VectorCordinates){
+void Snake_AppendTail(Snake *self, void *VectorCordinates){
   pushBack(self->snake, VectorCordinates);
 }
 
@@ -64,9 +49,9 @@ bool GameObject_Snake_SetSpeed(struct object_snake *self) {
   }
 }
 
-void GameObject_Snake_Init(Snake *self) {
+void Snake_Init(Snake *self) {
   self->snake = dequeInit();
-  self->AppendToTail = GameObject_Snake_AppendTail;
+  self->AppendToTail = Snake_AppendTail;
   self->Draw = GameObject_Draw_Snake;
   self->Update = GameObject_Snake_Update;
   self->last_update_time = 0;

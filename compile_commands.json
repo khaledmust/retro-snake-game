@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Ilibs/raylib/include",
+      "-Iobjects",
+      "-Ilibs/deque",
+      "-c",
+      "-o",
+      "libs/deque/deque.o",
+      "libs/deque/deque.c"
+    ],
+    "directory": "/home/khaled/My-Projects/retro-snake-game",
+    "file": "/home/khaled/My-Projects/retro-snake-game/libs/deque/deque.c",
+    "output": "/home/khaled/My-Projects/retro-snake-game/libs/deque/deque.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Ilibs/raylib/include",
+      "-Iobjects",
+      "-Ilibs/deque",
+      "-c",
+      "-o",
+      "objects/snake.o",
+      "objects/snake.c"
+    ],
+    "directory": "/home/khaled/My-Projects/retro-snake-game",
+    "file": "/home/khaled/My-Projects/retro-snake-game/objects/snake.c",
+    "output": "/home/khaled/My-Projects/retro-snake-game/objects/snake.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Ilibs/raylib/include",
+      "-Iobjects",
+      "-Ilibs/deque",
+      "-c",
+      "-o",
+      "objects/food.o",
+      "objects/food.c"
+    ],
+    "directory": "/home/khaled/My-Projects/retro-snake-game",
+    "file": "/home/khaled/My-Projects/retro-snake-game/objects/food.c",
+    "output": "/home/khaled/My-Projects/retro-snake-game/objects/food.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Ilibs/raylib/include",
+      "-Iobjects",
+      "-Ilibs/deque",
+      "-c",
+      "-o",
+      "main.o",
+      "main.c"
+    ],
+    "directory": "/home/khaled/My-Projects/retro-snake-game",
+    "file": "/home/khaled/My-Projects/retro-snake-game/main.c",
+    "output": "/home/khaled/My-Projects/retro-snake-game/main.o"
+  }
+]

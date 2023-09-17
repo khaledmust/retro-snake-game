@@ -1,16 +1,16 @@
-#include "libs/gamelib/gameobject.h"
-#include "libs/raylib/include/raylib.h"
-#include "libs/raylib/include/raymath.h"
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
+#include "objects/food.h"
+#include "objects/snake.h"
+#include "game/game.h"
 
 /* Grid size */
 #define CellSize 30
 #define CellCount 25
 
-#define ScreenWidth CellSize *CellCount
-#define ScreenHeight CellSize *CellCount
+#define ScreenWidth CellSize * CellCount
+#define ScreenHeight CellSize * CellCount
 #define GameSpeed 60
 
 Color Green = {173, 204, 96, 255};
@@ -31,18 +31,21 @@ int main(void) {
 
   /* Setting up the game speed, so as to run the same on all platforms. */
   SetTargetFPS(GameSpeed);
-  Food_Init(&myFood);
-  GameObject_Snake_Init(&mySnake);
 
-    mySnake.AppendToTail(&(mySnake), &pos);
-    mySnake.AppendToTail(&(mySnake), &pos2);
-    mySnake.AppendToTail(&(mySnake), &pos3);
+  /* Creating instances of the game objects. */
+  Food_Init(&myFood);
+  Snake_Init(&mySnake);
+
+  mySnake.AppendToTail(&(mySnake), &pos);
+  mySnake.AppendToTail(&(mySnake), &pos2);
+  mySnake.AppendToTail(&(mySnake), &pos3);
 
   mySnake.direction.x = -1;
   mySnake.direction.y = 0;
 
   /* Game loop */
   while (WindowShouldClose() == false) {
+
     /* Draw the canvas. */
     BeginDrawing();
 
@@ -51,9 +54,6 @@ int main(void) {
 
     myFood.Draw(myFood.texture, myFood.position.x * CellSize,
                 myFood.position.y * CellSize, myFood.color);
-
-    /* mySnake.direction.x = -1; */
-    /* mySnake.direction.y = 0; */
 
     if (mySnake.SetSpeed(&mySnake)) {
       mySnake.Update(&mySnake);
@@ -79,7 +79,9 @@ int main(void) {
     /* scanf("%d", &x); */
     /* while (x != 1) {} */
     /* x = 0; */
+
     mySnake.Draw(&mySnake, CellSize, DarkGreen);
+
     printf("The direction after is %f, %f\n", mySnake.direction.x,
            mySnake.direction.y);
 

@@ -1,27 +1,36 @@
-# Makefile for Raylib Program
-
-# Compiler and compiler flags
+# Compiler and flags
 CC = gcc
-CFLAGS = -Wall -g -I./libs/raylib/include\
--I./libs/gamelib\
--L./libs/raylib/lib\
--L./libs/gamelib\
--lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+CFLAGS = -Wall -Wextra -Ilibs/raylib/include -Iobjects -Ilibs/deque
+LDFLAGS = -Llibs/raylib/lib -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
+# Source files
+LIBS_DIR = libs
+OBJECTS_DIR = objects
 
-# Source file and output executable
-SRC = main.c \
-./libs/gamelib/gameobject.c \
-./libs/gamelib/deque.c
-OUT = raylib_program
+# Object files
+OBJECTS = $(OBJECTS_DIR)/snake.o $(OBJECTS_DIR)/food.o
+GAME_OBJECTS = $(LIBS_DIR)/deque/deque.o $(OBJECTS)
 
-all: $(OUT)
+# Main source file
+MAIN_SRC = main.c
 
-$(OUT): $(SRC)
-	$(CC) $(SRC)  $(CFLAGS) -o $(OUT)
+# Executable
+EXECUTABLE = my_game
 
-run: $(OUT)
-	./$(OUT)
+# Build rule
+$(EXECUTABLE): $(GAME_OBJECTS) main.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
+# Object files rule
+$(OBJECTS_DIR)/%.o: $(OBJECTS_DIR)/%.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+# Main object file rule
+main.o: $(MAIN_SRC)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+# Clean rule
 clean:
-	rm -f $(OUT)
+	rm -f $(EXECUTABLE) $(GAME_OBJECTS) main.o
+
+.PHONY: clean
