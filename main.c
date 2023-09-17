@@ -16,8 +16,8 @@
 Color Green = {173, 204, 96, 255};
 Color DarkGreen = {43, 52, 24, 255};
 
-Food myFood;
-Snake mySnake;
+Game game;
+
 
 Vector2 pos = {.x = 5, .y = 9};
 Vector2 pos2 = {.x = 6, .y = 9};
@@ -33,15 +33,14 @@ int main(void) {
   SetTargetFPS(GameSpeed);
 
   /* Creating instances of the game objects. */
-  Food_Init(&myFood);
-  Snake_Init(&mySnake);
+Game_Init(&game);
 
-  mySnake.AppendToTail(&(mySnake), &pos);
-  mySnake.AppendToTail(&(mySnake), &pos2);
-  mySnake.AppendToTail(&(mySnake), &pos3);
+  game.snake.AppendToTail(&(game.snake), &pos);
+  game.snake.AppendToTail(&(game.snake), &pos2);
+  game.snake.AppendToTail(&(game.snake), &pos3);
 
-  mySnake.direction.x = -1;
-  mySnake.direction.y = 0;
+  game.snake.direction.x = -1;
+  game.snake.direction.y = 0;
 
   /* Game loop */
   while (WindowShouldClose() == false) {
@@ -52,27 +51,27 @@ int main(void) {
     /* Set the background to the color Green. */
     ClearBackground(Green);
 
-    myFood.Draw(myFood.texture, myFood.position.x * CellSize,
-                myFood.position.y * CellSize, myFood.color);
+    game.food.Draw(game.food.texture, game.food.position.x * CellSize,
+                game.food.position.y * CellSize, game.food.color);
 
-    if (mySnake.SetSpeed(&mySnake)) {
-      mySnake.Update(&mySnake);
+    if (game.snake.SetSpeed(&game.snake)) {
+      game.snake.Update(&game.snake);
     }
 
-    if (IsKeyPressed(KEY_UP) && mySnake.direction.y != 1) {
-      mySnake.direction = SnakeDirection[NORTH];
+    if (IsKeyPressed(KEY_UP) && game.snake.direction.y != 1) {
+      game.snake.direction = SnakeDirection[NORTH];
     }
 
-    if (IsKeyPressed(KEY_DOWN) && mySnake.direction.y != -1) {
-      mySnake.direction = SnakeDirection[SOUTH];
+    if (IsKeyPressed(KEY_DOWN) && game.snake.direction.y != -1) {
+      game.snake.direction = SnakeDirection[SOUTH];
     }
 
-    if (IsKeyPressed(KEY_RIGHT) && mySnake.direction.x != -1) {
-      mySnake.direction = SnakeDirection[EAST];
+    if (IsKeyPressed(KEY_RIGHT) && game.snake.direction.x != -1) {
+      game.snake.direction = SnakeDirection[EAST];
     }
 
-    if (IsKeyPressed(KEY_LEFT) && mySnake.direction.x != 1) {
-      mySnake.direction = SnakeDirection[WEST];
+    if (IsKeyPressed(KEY_LEFT) && game.snake.direction.x != 1) {
+      game.snake.direction = SnakeDirection[WEST];
     }
     /* int x = 0; */
     /* printf("Continue?\n"); */
@@ -80,10 +79,10 @@ int main(void) {
     /* while (x != 1) {} */
     /* x = 0; */
 
-    mySnake.Draw(&mySnake, CellSize, DarkGreen);
+    game.snake.Draw(&game.snake, CellSize, DarkGreen);
 
-    printf("The direction after is %f, %f\n", mySnake.direction.x,
-           mySnake.direction.y);
+    printf("The direction after is %f, %f\n", game.snake.direction.x,
+           game.snake.direction.y);
 
     /* End the canvas. */
     EndDrawing();
@@ -92,7 +91,7 @@ int main(void) {
   /* Destroy the window after the game exits. */
   CloseWindow();
 
-  Food_Deinit(&myFood);
+  Game_DeInit(&game);
 
   /* Exit status. */
   return 0;
