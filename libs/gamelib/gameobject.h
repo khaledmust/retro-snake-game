@@ -5,6 +5,11 @@
 #include "deque.h"
 #include <stdint.h>
 
+typedef enum { NORTH, SOUTH, EAST, WEST } Directions;
+
+extern Vector2 SnakeDirection[4];
+
+
 /* Game objects */
 typedef struct {
     Vector2 position;
@@ -15,9 +20,14 @@ typedef struct {
 }st_gameobject_food_t;
 
 typedef struct gameobject_snake{
-    t_deque snake;
-    void (*AppendToTail) (struct gameobject_snake *self, void *VectorCordintes);
+    t_deque *snake;
+    Vector2 direction;
+    double speed;
+    double last_update_time;
+    void (*AppendToTail) (struct gameobject_snake *self, void *VectorCordinates);
     void (*Draw) (struct gameobject_snake *self, int CellSize, Color color);
+    void (*Update) (struct gameobject_snake *self);
+    bool (*SetSpeed) (struct gameobject_snake *self);
 }st_gameobject_snake_t;
 
 void GameObject_Food_Init(st_gameobject_food_t *self);

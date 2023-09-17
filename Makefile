@@ -2,7 +2,7 @@
 
 # Compiler and compiler flags
 CC = gcc
-CFLAGS = -Wall -I./libs/raylib/include\
+CFLAGS = -Wall -g -I./libs/raylib/include\
 -I./libs/gamelib\
 -L./libs/raylib/lib\
 -L./libs/gamelib\
