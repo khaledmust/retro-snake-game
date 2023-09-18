@@ -60,6 +60,23 @@
       "-Ilibs/deque",
       "-c",
       "-o",
+      "game/game.o",
+      "game/game.c"
+    ],
+    "directory": "/home/khaled/My-Projects/retro-snake-game",
+    "file": "/home/khaled/My-Projects/retro-snake-game/game/game.c",
+    "output": "/home/khaled/My-Projects/retro-snake-game/game/game.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Ilibs/raylib/include",
+      "-Iobjects",
+      "-Ilibs/deque",
+      "-c",
+      "-o",
       "main.o",
       "main.c"
     ],

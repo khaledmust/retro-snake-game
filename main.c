@@ -47,16 +47,17 @@ Game_Init(&game);
 
     /* Draw the canvas. */
     BeginDrawing();
-
+    printf("Beginning to draw.\n");
     /* Set the background to the color Green. */
     ClearBackground(Green);
+    printf("Lay green canvas.\n");
 
     game.food.Draw(game.food.texture, game.food.position.x * CellSize,
                 game.food.position.y * CellSize, game.food.color);
 
-    if (game.snake.SetSpeed(&game.snake)) {
-      game.snake.Update(&game.snake);
-    }
+    game.snake.Draw(&game.snake, CellSize, DarkGreen);
+
+
 
     if (IsKeyPressed(KEY_UP) && game.snake.direction.y != 1) {
       game.snake.direction = SnakeDirection[NORTH];
@@ -79,9 +80,8 @@ Game_Init(&game);
     /* while (x != 1) {} */
     /* x = 0; */
 
-    game.snake.Draw(&game.snake, CellSize, DarkGreen);
-
-    printf("The direction after is %f, %f\n", game.snake.direction.x,
+    game.UpdateGame(&game);
+    printf("The direction after the press is %f, %f\n", game.snake.direction.x,
            game.snake.direction.y);
 
     /* End the canvas. */

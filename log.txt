@@ -1,0 +1,2289 @@
+Initiating game...
+INFO: Initializing raylib 4.5
+INFO: Supported raylib modules:
+INFO:     > rcore:..... loaded (mandatory)
+INFO:     > rlgl:...... loaded (mandatory)
+INFO:     > rshapes:... loaded (optional)
+INFO:     > rtextures:. loaded (optional)
+INFO:     > rtext:..... loaded (optional)
+INFO:     > rmodels:... loaded (optional)
+INFO:     > raudio:.... loaded (optional)
+INFO: DISPLAY: Device initialized successfully
+INFO:     > Display size: 1366 x 768
+INFO:     > Screen size:  750 x 750
+INFO:     > Render size:  750 x 750
+INFO:     > Viewport offsets: 0, 0
+INFO: GLAD: OpenGL extensions loaded successfully
+INFO: GL: Supported extensions count: 227
+INFO: GL: OpenGL device information:
+INFO:     > Vendor:   Intel
+INFO:     > Renderer: Mesa Intel(R) HD Graphics 620 (KBL GT2)
+INFO:     > Version:  4.6 (Core Profile) Mesa 23.0.4-0ubuntu1~23.04.1
+INFO:     > GLSL:     4.60
+INFO: GL: VAO extension detected, VAO functions loaded successfully
+INFO: GL: NPOT textures extension detected, full NPOT textures supported
+INFO: GL: DXT compressed textures supported
+INFO: GL: ETC2/EAC compressed textures supported
+INFO: TEXTURE: [ID 1] Texture loaded successfully (1x1 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 1] Default texture loaded successfully
+INFO: SHADER: [ID 1] Vertex shader compiled successfully
+INFO: SHADER: [ID 2] Fragment shader compiled successfully
+INFO: SHADER: [ID 3] Program shader loaded successfully
+INFO: SHADER: [ID 3] Default shader loaded successfully
+INFO: RLGL: Render batch vertex buffers loaded successfully in RAM (CPU)
+INFO: RLGL: Render batch vertex buffers loaded successfully in VRAM (GPU)
+INFO: RLGL: Default OpenGL state initialized successfully
+INFO: TEXTURE: [ID 2] Texture loaded successfully (128x128 | GRAY_ALPHA | 1 mipmaps)
+INFO: FONT: Default font loaded successfully (224 glyphs)
+INFO: TIMER: Target time per frame: 16.667 milliseconds
+I am in the Game Init loop.
+Enter snake Init.
+Exit snake init.
+Enter food init.
+INFO: FILEIO: [Graphics/food.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (28x28 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 3] Texture loaded successfully (28x28 | R8G8B8A8 | 1 mipmaps)
+Exit food init.
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is 0.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 4.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 3.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 2.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 1.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 9.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is -1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 9.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 8.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 8.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 7.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 7.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 6.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 6.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 5.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 5.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 4.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 4.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 3.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 3.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 2.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 1.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 1.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: 0.000000.
+Exit snake update.
+EATING FOOD!!!
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: 0.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 0.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 0.000000, -1.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 0.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 1.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 1.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 2.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 2.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 3.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 3.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 4.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 4.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 5.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 5.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 6.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 6.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The new coordinates are x: 7.000000, y: -2.000000.
+Exit snake update.
+The coordinates of the current node are x: 7.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+Beginning to draw.
+Lay green canvas.
+The coordinates of the current node are x: 7.000000, y: -2.000000.
+The direction after is 1.000000, 0.000000
+INFO: TEXTURE: [ID 2] Unloaded texture data from VRAM (GPU)
+INFO: SHADER: [ID 3] Default shader unloaded successfully
+INFO: TEXTURE: [ID 1] Default texture unloaded successfully
+INFO: Window closed successfully

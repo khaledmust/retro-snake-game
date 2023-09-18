@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -Ilibs/raylib/include -Iobjects -Ilibs/deque
+CFLAGS = -Wall -g -Wextra -Ilibs/raylib/include -Iobjects -Ilibs/deque
 LDFLAGS = -Llibs/raylib/lib -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
 # Source files
@@ -21,19 +21,19 @@ EXECUTABLE = my_game
 
 # Build rule
 $(EXECUTABLE): $(GAME_OBJECTS) main.o
-	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CC) $(CFLAGS) -g -o $@ $^ $(LDFLAGS)
 
 # Object files rule
 $(OBJECTS_DIR)/%.o: $(OBJECTS_DIR)/%.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -g -c -o $@ $<
 
 # Game files rule
 $(GAME_DIR)/%.o: $(GAME_DIR)/%.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -g -c -o $@ $<
 
 # Main object file rule
 main.o: $(MAIN_SRC)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -g -c -o $@ $<
 
 # Clean rule
 clean:
