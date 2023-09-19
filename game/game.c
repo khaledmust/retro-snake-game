@@ -23,9 +23,12 @@ void Game_Init(Game *self) {
   printf("I am in the Game Init loop.\n");
   Snake_Init(&(self->snake));
   Food_Init(&(self->food));
+  self->speed = 0.2;
+  self->last_update_time = 0;
   self->CheckCollisionFood = Game_CheckCollisionWithFood;
   self->CheckCollisionGrid = Game_CheckCollisionWithGrid;
   self->UpdateGame = Game_Update;
+  self->SetSpeed = Game_SetSpeed;
 }
 
 void Game_DeInit(Game *self) {
@@ -102,6 +105,17 @@ void Game_CheckCollisionWithGrid(Game *self) {
   }
 }
 
+bool Game_SetSpeed(Game *self) {
+  double current_time = GetTime();
+
+  if (current_time - self->last_update_time >= self->speed) {
+    self->last_update_time = current_time;
+    return true;
+  } else {
+    return false;
+  }
+}
+
 /**
  * @brief Updates the game state and handles the snake's movement.
  *
@@ -119,7 +133,7 @@ void Game_CheckCollisionWithGrid(Game *self) {
  */
 void Game_Update(Game *self) {
   /* Update the snake's movement every "speed" unit. */
-  if (self->snake.SetSpeed(&self->snake)) {
+  if (self->SetSpeed(self)) {
     if (self->snake.add_segment) {
       /* Add node to the head of the snake. */
       Vector2 *old_coordinates = (Vector2 *)peekFront(self->snake.snake);

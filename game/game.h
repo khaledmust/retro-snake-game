@@ -17,6 +17,8 @@ typedef struct object_game {
   Snake snake; /**< The Snake game object representing the player-controlled
                   snake. */
   Food food;   /**< The Food game object representing the in-game food. */
+  double speed;
+  double last_update_time;
   void (*CheckCollisionFood)(
       struct object_game
           *self); /**< Function pointer for checking collision with food. */
@@ -25,6 +27,7 @@ typedef struct object_game {
                                     with the game grid. */
   void (*UpdateGame)(struct object_game *); /**< Function pointer for updating
                                                the game state. */
+  bool (*SetSpeed)(struct object_game *);
 } Game;
 
 void Game_Init(Game *self);
@@ -32,5 +35,5 @@ void Game_DeInit(Game *self);
 void Game_CheckCollisionWithFood(Game *self);
 void Game_CheckCollisionWithGrid(Game *self);
 void Game_Update(Game *self);
-
+bool Game_SetSpeed(Game *self);
 #endif // GAME_H_

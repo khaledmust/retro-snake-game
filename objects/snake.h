@@ -27,8 +27,6 @@ typedef struct object_snake {
   t_deque *snake;          /**< The deque representing the snake's body. */
   Vector2 direction;       /**< The current direction of motion. */
   bool add_segment;        /**< Flag indicating whether to add a new segment. */
-  double speed;            /**< The snake's speed. */
-  double last_update_time; /**< The timestamp of the last update. */
   void (*AppendToTail)(struct object_snake *self,
                        void *VectorCordinates); /**< Function pointer for
                                                    appending to the tail. */
@@ -39,8 +37,6 @@ typedef struct object_snake {
                Color color); /**< Function pointer for drawing the snake. */
   void (*Update)(struct object_snake
                      *self); /**< Function pointer for updating the snake. */
-  bool (*SetSpeed)(struct object_snake *self); /**< Function pointer for setting
-                                                  the snake's speed. */
   void (*SnakeDeInit)(
       struct object_snake
           *self); /**< Function pointer for deinitializing the snake. */

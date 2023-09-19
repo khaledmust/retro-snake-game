@@ -95,19 +95,6 @@ void GameObject_Snake_Update(struct object_snake *self) {
   printf("Exit snake update.\n");
 }
 
-// THIS FUNCTION SHOULD BELONG TO THE GAME CLASS.
-bool GameObject_Snake_SetSpeed(struct object_snake *self) {
-  double current_time = GetTime();
-  /* Calculate the Delta Time and compare it to the speicfied interval (speed).
-   */
-  if (current_time - self->last_update_time >= self->speed) {
-    self->last_update_time = current_time;
-    return true;
-  } else {
-    return false;
-  }
-}
-
 /**
  * @brief Deinitializes and cleans up the Snake game object.
  *
@@ -147,13 +134,6 @@ void Snake_Init(Snake *self) {
   /* Assign the drawing and updating functions. */
   self->Draw = GameObject_Draw_Snake;
   self->Update = GameObject_Snake_Update;
-
-  /* Initialize the last update time and speed. */
-  self->last_update_time = 0;
-  self->speed = 0.2;
-
-  /* Assign a function for setting the snake's speed. */
-  self->SetSpeed = GameObject_Snake_SetSpeed;
 
   /* Assign a function for deinitializing the snake object. */
   self->SnakeDeInit = Snake_DeInit;
