@@ -4,6 +4,8 @@
 #include "food.h"
 #include "snake.h"
 
+#define OFFSET 75
+
 /**
  * @struct Game
  * @brief Represents the game state and components.

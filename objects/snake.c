@@ -1,7 +1,6 @@
-#include "snake.h"
 #include <stdint.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include "snake.h"
 
 /**
  * @var SnakeDirection[]
@@ -57,13 +56,10 @@ void Snake_AppendHead(Snake *self, void *VectorCoordinates) {
  * @param color The color used for rendering the snake. */
 void GameObject_Draw_Snake(Snake *self, int CellSize, Color color) {
   t_deque_node *current_node = self->snake->first;
-  printf("The coordinates of the current node are x: %f, y: %f.\n",
-         ((Vector2 *)current_node->content)->x,
-         ((Vector2 *)current_node->content)->y);
   while (current_node != NULL) {
     Rectangle snakeSegment = {
-        .x = ((Vector2 *)(current_node->content))->x * CellSize,
-        .y = ((Vector2 *)(current_node->content))->y * CellSize,
+        .x = ((Vector2 *)(current_node->content))->x * CellSize + 75,
+        .y = ((Vector2 *)(current_node->content))->y * CellSize + 75,
         CellSize,
         CellSize};
     DrawRectangleRounded(snakeSegment, 0.5, 6, color);
@@ -82,17 +78,11 @@ void GameObject_Draw_Snake(Snake *self, int CellSize, Color color) {
  * @param self A pointer to the Snake game object to be updated.
  */
 void GameObject_Snake_Update(struct object_snake *self) {
-  printf("This is the update function\n");
   Vector2 *HeadCoordinate = (Vector2 *)peekFront(self->snake);
-  printf("The content of the head is %f %f\n", HeadCoordinate->x,
-         HeadCoordinate->y);
   Vector2 *NewCoordinates = malloc(sizeof(Vector2));
   *NewCoordinates = Vector2Add(*HeadCoordinate, self->direction);
-  printf("The new coordinates are x: %f, y: %f.\n", NewCoordinates->x,
-         NewCoordinates->y);
   popBack(self->snake);
   pushFront(self->snake, (void *)NewCoordinates);
-  printf("Exit snake update.\n");
 }
 
 /**
@@ -120,7 +110,6 @@ void Snake_DeInit(Snake *self) {
  *
  * @param self A pointer to the Snake game object to be initialized. */
 void Snake_Init(Snake *self) {
-  printf("Enter snake Init.\n");
   /* Initialize the deque for the snake's body. */
   self->snake = dequeInit();
 
@@ -137,5 +126,4 @@ void Snake_Init(Snake *self) {
 
   /* Assign a function for deinitializing the snake object. */
   self->SnakeDeInit = Snake_DeInit;
-  printf("Exit snake init.\n");
 }

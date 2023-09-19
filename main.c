@@ -1,23 +1,30 @@
+#include "game/game.h"
+#include "objects/food.h"
+#include "objects/snake.h"
+#include "raylib.h"
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
-#include "objects/food.h"
-#include "objects/snake.h"
-#include "game/game.h"
 
 /* Grid size */
-#define CellSize 30
+#define CellSize 20
 #define CellCount 25
+#define OFFSET 75
+#define BORDER_THICKNESS 5
 
-#define ScreenWidth CellSize * CellCount
-#define ScreenHeight CellSize * CellCount
- #define GameSpeed 60
+#define ScreenWidth (CellSize * CellCount) + (2 * OFFSET)
+#define ScreenHeight (CellSize * CellCount) + (2 * OFFSET)
+#define GameSpeed 60
 
 Color Green = {173, 204, 96, 255};
 Color DarkGreen = {43, 52, 24, 255};
 
-Game game;
+Rectangle Borders = {.x = (OFFSET - BORDER_THICKNESS),
+                     .y = (OFFSET - BORDER_THICKNESS),
+                     .height = (CellSize * CellCount) + (2 * BORDER_THICKNESS),
+                     .width = (CellSize * CellCount) + (2 * BORDER_THICKNESS)};
 
+Game game;
 
 Vector2 pos = {.x = 6, .y = 9};
 Vector2 pos2 = {.x = 5, .y = 9};
@@ -33,7 +40,7 @@ int main(void) {
   SetTargetFPS(GameSpeed);
 
   /* Creating instances of the game objects. */
-Game_Init(&game);
+  Game_Init(&game);
 
   game.snake.AppendToTail(&(game.snake), &pos);
   game.snake.AppendToTail(&(game.snake), &pos2);
@@ -45,6 +52,8 @@ Game_Init(&game);
   /* Game loop */
   while (WindowShouldClose() == false) {
 
+    DrawRectangleLinesEx(Borders, BORDER_THICKNESS, DarkGreen);
+
     /* Draw the canvas. */
     BeginDrawing();
     printf("Beginning to draw.\n");
@@ -52,12 +61,10 @@ Game_Init(&game);
     ClearBackground(Green);
     printf("Lay green canvas.\n");
 
-    game.food.Draw(game.food.texture, game.food.position.x * CellSize,
-                game.food.position.y * CellSize, game.food.color);
+    game.food.Draw(game.food.texture, game.food.position.x * CellSize + 75,
+                   game.food.position.y * CellSize + 75, game.food.color);
 
     game.snake.Draw(&game.snake, CellSize, DarkGreen);
-
-
 
     if (IsKeyPressed(KEY_UP) && game.snake.direction.y != 1) {
       game.snake.direction = SnakeDirection[NORTH];
