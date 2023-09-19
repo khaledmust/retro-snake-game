@@ -11,7 +11,7 @@
 
 #define ScreenWidth CellSize * CellCount
 #define ScreenHeight CellSize * CellCount
-#define GameSpeed 60
+ #define GameSpeed 60
 
 Color Green = {173, 204, 96, 255};
 Color DarkGreen = {43, 52, 24, 255};
@@ -19,9 +19,9 @@ Color DarkGreen = {43, 52, 24, 255};
 Game game;
 
 
-Vector2 pos = {.x = 5, .y = 9};
-Vector2 pos2 = {.x = 6, .y = 9};
-Vector2 pos3 = {.x = 7, .y = 9};
+Vector2 pos = {.x = 6, .y = 9};
+Vector2 pos2 = {.x = 5, .y = 9};
+Vector2 pos3 = {.x = 4, .y = 9};
 
 int main(void) {
   puts("Initiating game...");

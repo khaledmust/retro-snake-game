@@ -20,7 +20,7 @@ typedef struct object_snake{
     void (*Draw) (struct object_snake *self, int CellSize, Color color);
     void (*Update) (struct object_snake *self);
     bool (*SetSpeed) (struct object_snake *self);
-    /* void (*SnakeDeInit) (struct object_snake *self); */
+    void (*SnakeDeInit) (struct object_snake *self);
 }Snake;
 
 void Snake_Init(Snake *self);

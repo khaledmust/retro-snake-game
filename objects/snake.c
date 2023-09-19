@@ -57,15 +57,13 @@ bool GameObject_Snake_SetSpeed(struct object_snake *self) {
   }
 }
 
-/* void Snake_DeInit(Snake *self) { */
-/*   t_deque_node *current_node = self->snake->first; */
-/*   t_deque_node *next_node; */
-/*   while (current_node != NULL) { */
-/*     next_node = current_node->next; */
-/*     free(current_node); */
-/*     current_node = next_node; */
-/*   } */
-/* } */
+void Snake_DeInit(Snake *self) {
+  t_deque_node *current_node = self->snake->last;
+  while (current_node != NULL) {
+    free(popBack(self->snake));
+    current_node = self->snake->last;
+  }
+}
 
 void Snake_Init(Snake *self) {
   printf("Enter snake Init.\n");
@@ -78,6 +76,6 @@ void Snake_Init(Snake *self) {
   self->last_update_time = 0;
   self->speed = 0.2;
   self->SetSpeed = GameObject_Snake_SetSpeed;
-  /* self->SnakeDeInit = Snake_DeInit; */
+  self->SnakeDeInit = Snake_DeInit;
   printf("Exit snake init.\n");
 }
