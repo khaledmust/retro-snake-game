@@ -4,13 +4,28 @@
 #include "food.h"
 #include "snake.h"
 
+/**
+ * @struct Game
+ * @brief Represents the game state and components.
+ *
+ * The `Game` structure defines the properties and functions associated with the
+ * game state. It includes the Snake game object, Food game object, and function
+ * pointers for checking collision with food, checking collision with the game
+ * grid, and updating the game state.
+ */
 typedef struct object_game {
-    Snake snake;
-    Food food;
-    void (*CheckCollisionFood) (struct object_game *self);
-    void (*CheckCollisionGrid) (struct object_game *self);
-    void (*UpdateGame) (struct object_game *);
-}Game;
+  Snake snake; /**< The Snake game object representing the player-controlled
+                  snake. */
+  Food food;   /**< The Food game object representing the in-game food. */
+  void (*CheckCollisionFood)(
+      struct object_game
+          *self); /**< Function pointer for checking collision with food. */
+  void (*CheckCollisionGrid)(
+      struct object_game *self); /**< Function pointer for checking collision
+                                    with the game grid. */
+  void (*UpdateGame)(struct object_game *); /**< Function pointer for updating
+                                               the game state. */
+} Game;
 
 void Game_Init(Game *self);
 void Game_DeInit(Game *self);
