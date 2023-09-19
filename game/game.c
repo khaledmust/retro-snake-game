@@ -8,16 +8,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+Color Green = {173, 204, 96, 255};
+Color DarkGreen = {43, 52, 24, 255};
+
+Rectangle Borders = {.x = (OFFSET - BORDER_THICKNESS),
+                     .y = (OFFSET - BORDER_THICKNESS),
+                     .height = (CellSize * CellCount) + (2 * BORDER_THICKNESS),
+                     .width = (CellSize * CellCount) + (2 * BORDER_THICKNESS)};
+
 /**
  * @brief An array of Vector2 structures representing reset positions.
  *
- * The `reset_positions` array contains three Vector2 structures, each representing
- * a set of coordinates. These coordinates are predefined for use in resetting
- * game elements or objects to specific positions in the game.
+ * The `reset_positions` array contains three Vector2 structures, each
+ * representing a set of coordinates. These coordinates are predefined for use
+ * in resetting game elements or objects to specific positions in the game.
  */
 Vector2 reset_positions[3] = {
     {.x = 6, .y = 9}, {.x = 5, .y = 9}, {.x = 4, .y = 9}};
-
 
 void Game_Init(Game *self) {
   printf("I am in the Game Init loop.\n");
@@ -29,6 +36,7 @@ void Game_Init(Game *self) {
   self->CheckCollisionGrid = Game_CheckCollisionWithGrid;
   self->UpdateGame = Game_Update;
   self->SetSpeed = Game_SetSpeed;
+  self->Draw = Game_Draw;
 }
 
 void Game_DeInit(Game *self) {
@@ -78,9 +86,9 @@ static void Game_Reset(Game *self) {
 /**
  * @brief Checks for collision between the snake and the game grid boundaries.
  *
- * This function checks whether the snake has collided with the boundaries of the game grid.
- * If a collision is detected with either the horizontal (x) or vertical (y) boundaries,
- * it performs the following actions:
+ * This function checks whether the snake has collided with the boundaries of
+ * the game grid. If a collision is detected with either the horizontal (x) or
+ * vertical (y) boundaries, it performs the following actions:
  * - Prints a "GAME OVER" message indicating the end of the game.
  * - Resets the game to its initial state using the `Game_Reset` function.
  *
@@ -119,15 +127,17 @@ bool Game_SetSpeed(Game *self) {
 /**
  * @brief Updates the game state and handles the snake's movement.
  *
- * This function is responsible for updating the game state and managing the snake's movement.
- * It performs the following actions:
+ * This function is responsible for updating the game state and managing the
+ * snake's movement. It performs the following actions:
  * - Checks if it's time to update the snake's movement based on its speed.
- * - If an update is due, it checks whether a new segment needs to be added to the snake.
+ * - If an update is due, it checks whether a new segment needs to be added to
+ * the snake.
  *   - If yes, it adds a new node to the head of the snake's body.
  *   - Updates the snake's position.
  *   - Resets the flag for adding a new segment.
  *   - Checks for collisions with food and the game grid.
- * - If no new segment is added, it updates the snake's position and checks for collisions.
+ * - If no new segment is added, it updates the snake's position and checks for
+ * collisions.
  *
  * @param self A pointer to the Game object representing the current game state.
  */
@@ -161,4 +171,22 @@ void Game_Update(Game *self) {
       self->CheckCollisionGrid(self);
     }
   }
+}
+
+void Game_Draw(Game *self) {
+
+  /* Draw the canvas. */
+  BeginDrawing();
+  /* Set the background to the color Green. */
+  ClearBackground(Green);
+
+  /* /\* Draw borders. *\/ */
+  DrawRectangleLinesEx(Borders, BORDER_THICKNESS, DarkGreen);
+
+  /* Draw the food object. */
+  self->food.Draw(self->food.texture, self->food.position.x * CellSize + OFFSET,
+                  self->food.position.y * CellSize + OFFSET, self->food.color);
+
+  /* Draw the snake object. */
+  self->snake.Draw(&self->snake, CellSize, DarkGreen);
 }

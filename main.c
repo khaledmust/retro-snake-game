@@ -6,23 +6,10 @@
 #include <stdint.h>
 #include <stdio.h>
 
-/* Grid size */
-#define CellSize 20
-#define CellCount 25
-#define OFFSET 75
-#define BORDER_THICKNESS 5
 
 #define ScreenWidth (CellSize * CellCount) + (2 * OFFSET)
 #define ScreenHeight (CellSize * CellCount) + (2 * OFFSET)
 #define GameSpeed 60
-
-Color Green = {173, 204, 96, 255};
-Color DarkGreen = {43, 52, 24, 255};
-
-Rectangle Borders = {.x = (OFFSET - BORDER_THICKNESS),
-                     .y = (OFFSET - BORDER_THICKNESS),
-                     .height = (CellSize * CellCount) + (2 * BORDER_THICKNESS),
-                     .width = (CellSize * CellCount) + (2 * BORDER_THICKNESS)};
 
 Game game;
 
@@ -52,19 +39,7 @@ int main(void) {
   /* Game loop */
   while (WindowShouldClose() == false) {
 
-    DrawRectangleLinesEx(Borders, BORDER_THICKNESS, DarkGreen);
-
-    /* Draw the canvas. */
-    BeginDrawing();
-    printf("Beginning to draw.\n");
-    /* Set the background to the color Green. */
-    ClearBackground(Green);
-    printf("Lay green canvas.\n");
-
-    game.food.Draw(game.food.texture, game.food.position.x * CellSize + 75,
-                   game.food.position.y * CellSize + 75, game.food.color);
-
-    game.snake.Draw(&game.snake, CellSize, DarkGreen);
+    game.Draw(&game);
 
     if (IsKeyPressed(KEY_UP) && game.snake.direction.y != 1) {
       game.snake.direction = SnakeDirection[NORTH];
@@ -81,15 +56,8 @@ int main(void) {
     if (IsKeyPressed(KEY_LEFT) && game.snake.direction.x != 1) {
       game.snake.direction = SnakeDirection[WEST];
     }
-    /* int x = 0; */
-    /* printf("Continue?\n"); */
-    /* scanf("%d", &x); */
-    /* while (x != 1) {} */
-    /* x = 0; */
 
     game.UpdateGame(&game);
-    printf("The direction after the press is %f, %f\n", game.snake.direction.x,
-           game.snake.direction.y);
 
     /* End the canvas. */
     EndDrawing();

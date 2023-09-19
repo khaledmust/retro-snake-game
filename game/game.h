@@ -4,7 +4,11 @@
 #include "food.h"
 #include "snake.h"
 
+/* Grid size */
+#define CellSize 20
+#define CellCount 25
 #define OFFSET 75
+#define BORDER_THICKNESS 5
 
 /**
  * @struct Game
@@ -30,6 +34,7 @@ typedef struct object_game {
   void (*UpdateGame)(struct object_game *); /**< Function pointer for updating
                                                the game state. */
   bool (*SetSpeed)(struct object_game *);
+  void (*Draw)(struct object_game *);
 } Game;
 
 void Game_Init(Game *self);
@@ -38,4 +43,6 @@ void Game_CheckCollisionWithFood(Game *self);
 void Game_CheckCollisionWithGrid(Game *self);
 void Game_Update(Game *self);
 bool Game_SetSpeed(Game *self);
+void Game_Draw(Game *self);
+
 #endif // GAME_H_
