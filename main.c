@@ -13,10 +13,6 @@
 
 Game game;
 
-Vector2 pos = {.x = 6, .y = 9};
-Vector2 pos2 = {.x = 5, .y = 9};
-Vector2 pos3 = {.x = 4, .y = 9};
-
 int main(void) {
   puts("Initiating game...");
 
@@ -29,18 +25,10 @@ int main(void) {
   /* Creating instances of the game objects. */
   Game_Init(&game);
 
-  game.snake.AppendToTail(&(game.snake), &pos);
-  game.snake.AppendToTail(&(game.snake), &pos2);
-  game.snake.AppendToTail(&(game.snake), &pos3);
-
-  game.snake.direction.x = -1;
-  game.snake.direction.y = 0;
-
   /* Game loop */
   while (WindowShouldClose() == false) {
 
     game.Draw(&game);
-
 
     if (IsKeyPressed(KEY_UP) && game.snake.direction.y != 1) {
       game.snake.direction = SnakeDirection[NORTH];

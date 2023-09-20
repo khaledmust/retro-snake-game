@@ -84,9 +84,8 @@ void Game_Init(Game *self) {
   Food_Init(&(self->food));
   self->speed = 0.2;
   self->last_update_time = 0;
-  self->score = 0;
 
-  //Game_Reset(self);
+  Game_Reset(self);
 
   self->GameTitleSettings.title = "Retro Snake";
   self->GameTitleSettings.posX = OFFSET - BORDER_THICKNESS;
