@@ -8,13 +8,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+extern Game game;
+
 Color Green = {173, 204, 96, 255};
 Color DarkGreen = {43, 52, 24, 255};
 
-Rectangle Borders = {.x = (OFFSET - BORDER_THICKNESS),
-                     .y = (OFFSET - BORDER_THICKNESS),
-                     .height = (CellSize * CellCount) + (2 * BORDER_THICKNESS),
-                     .width = (CellSize * CellCount) + (2 * BORDER_THICKNESS)};
+/**
+ * @brief Defines the rectangular borders of the game grid.
+ *
+ * The `Borders` variable represents a rectangle that defines the borders of the
+ * game grid. It specifies the position, height, and width of the grid
+ * boundaries, including any border thickness.
+ *
+ * @note The position is determined by the `OFFSET` and `BORDER_THICKNESS`
+ * values.
+ * @note The height and width are based on the cell size and count, including
+ * border thickness.
+ */
+Rectangle Borders = {
+    .x = (OFFSET - BORDER_THICKNESS), /**< The x-coordinate of the top-left
+                                         corner of the borders. */
+    .y = (OFFSET - BORDER_THICKNESS), /**< The y-coordinate of the top-left
+                                         corner of the borders. */
+    .height = (CellSize * CellCount) +
+              (2 * BORDER_THICKNESS), /**< The height of the borders. */
+    .width = (CellSize * CellCount) +
+             (2 * BORDER_THICKNESS)}; /**< The width of the borders. */
 
 /**
  * @brief An array of Vector2 structures representing reset positions.
@@ -26,32 +45,6 @@ Rectangle Borders = {.x = (OFFSET - BORDER_THICKNESS),
 Vector2 reset_positions[3] = {
     {.x = 6, .y = 9}, {.x = 5, .y = 9}, {.x = 4, .y = 9}};
 
-void Game_Init(Game *self) {
-  printf("I am in the Game Init loop.\n");
-  Snake_Init(&(self->snake));
-  Food_Init(&(self->food));
-  self->speed = 0.2;
-  self->last_update_time = 0;
-  self->CheckCollisionFood = Game_CheckCollisionWithFood;
-  self->CheckCollisionGrid = Game_CheckCollisionWithGrid;
-  self->UpdateGame = Game_Update;
-  self->SetSpeed = Game_SetSpeed;
-  self->Draw = Game_Draw;
-}
-
-void Game_DeInit(Game *self) {
-  Food_Deinit(&(self->food));
-  self->snake.SnakeDeInit(&self->snake);
-}
-
-void Game_CheckCollisionWithFood(Game *self) {
-  if (Vector2Equals(*(Vector2 *)(self->snake.snake->first->content),
-                    self->food.position)) {
-    puts("EATING FOOD!!!");
-    self->snake.add_segment = true;
-    self->food.GenerateRandomPosition(&(self->snake), &(self->food));
-  }
-}
 
 /**
  * @brief Resets the game to its initial state.
@@ -79,8 +72,78 @@ static void Game_Reset(Game *self) {
   self->snake.direction.x = 1;
   self->snake.direction.y = 0;
 
+  self->score = 0;
+
   /* Generate a new random position for the Food object. */
   self->food.GenerateRandomPosition(&self->snake, &self->food);
+}
+
+
+void Game_Init(Game *self) {
+  Snake_Init(&(self->snake));
+  Food_Init(&(self->food));
+  self->speed = 0.2;
+  self->last_update_time = 0;
+  self->score = 0;
+
+  //Game_Reset(self);
+
+  self->GameTitleSettings.title = "Retro Snake";
+  self->GameTitleSettings.posX = OFFSET - BORDER_THICKNESS;
+  self->GameTitleSettings.posY = 20;
+  self->GameTitleSettings.size = 35;
+  self->GameTitleSettings.color = DarkGreen;
+
+  self->GameScoreTitleSettings.title =(char *)TextFormat("%i", self->score);
+  self->GameScoreTitleSettings.posX =
+      (CellSize * CellCount) + (OFFSET - BORDER_THICKNESS);
+  self->GameScoreTitleSettings.posY = 20;
+  self->GameScoreTitleSettings.size = 35;
+  self->GameScoreTitleSettings.color = DarkGreen;
+
+  self->GameCreatorTitleSettings.title = "Created by: Khaled Mustafa";
+  self->GameCreatorTitleSettings.posX = OFFSET;
+  self->GameCreatorTitleSettings.posY =
+      (CellSize * CellCount) + (OFFSET + BORDER_THICKNESS);
+  self->GameCreatorTitleSettings.size = 30;
+  self->GameCreatorTitleSettings.color = DarkGreen;
+
+  self->CheckCollisionFood = Game_CheckCollisionWithFood;
+  self->CheckCollisionGrid = Game_CheckCollisionWithGrid;
+  self->UpdateGame = Game_Update;
+  self->SetSpeed = Game_SetSpeed;
+  self->Draw = Game_Draw;
+}
+
+void Game_DeInit(Game *self) {
+  Food_Deinit(&(self->food));
+  self->snake.SnakeDeInit(&self->snake);
+}
+
+/**
+ * @brief Checks for collision between the snake and the food object.
+ *
+ * This function checks whether the head of the snake has collided with the food
+ * object. If a collision is detected, it performs the following actions:
+ * - Sets the flag to add a new segment to the snake.
+ * - Generates a new random position for the food object.
+ * - Increases the player's score.
+ *
+ * @param self A pointer to the Game object representing the current game state.
+ */
+void Game_CheckCollisionWithFood(Game *self) {
+  /* Check if the head of the snake collides with the food object's position. */
+  if (Vector2Equals(*(Vector2 *)(self->snake.snake->first->content),
+                    self->food.position)) {
+    /* Set the flag to add a new segment to the snake. */
+    self->snake.add_segment = true;
+
+    /* Generate a new random position for the food object. */
+    self->food.GenerateRandomPosition(&(self->snake), &(self->food));
+
+    /* Increase the player's score. */
+    self->score++;
+  }
 }
 
 /**
@@ -108,15 +171,27 @@ void Game_CheckCollisionWithGrid(Game *self) {
       ((Vector2 *)(self->snake.snake->first->content))->y <= -1) {
     printf("GAME OVER !!!");
 
-    /* Reset the game to its initial state. */
+    /* Reset the to its initial state. */
     Game_Reset(self);
   }
 }
 
+/**
+ * @brief Checks if it's time to update the game's speed.
+ *
+ * This function checks if enough time has elapsed since the last game update to
+ * determine whether it's time to  perform the next game update.
+ *
+ * @param self A pointer to the Game object representing the current game state.
+ *
+ * @return Returns true if it's time to update the game's speed and perform the
+ * next game update; otherwise, returns false.
+ */
 bool Game_SetSpeed(Game *self) {
   double current_time = GetTime();
 
   if (current_time - self->last_update_time >= self->speed) {
+    /* Update the last update time to the current time. */
     self->last_update_time = current_time;
     return true;
   } else {
@@ -180,7 +255,7 @@ void Game_Draw(Game *self) {
   /* Set the background to the color Green. */
   ClearBackground(Green);
 
-  /* /\* Draw borders. *\/ */
+  /* Draw borders. */
   DrawRectangleLinesEx(Borders, BORDER_THICKNESS, DarkGreen);
 
   /* Draw the food object. */
@@ -189,4 +264,26 @@ void Game_Draw(Game *self) {
 
   /* Draw the snake object. */
   self->snake.Draw(&self->snake, CellSize, DarkGreen);
+
+  /* Draw the name of the game. */
+  DrawText(self->GameTitleSettings.title, self->GameTitleSettings.posX,
+           self->GameTitleSettings.posY, self->GameTitleSettings.size,
+           self->GameTitleSettings.color);
+
+  /* Draw the score. */
+  /* DrawText(self->GameScoreTitleSettings.title, */
+  /*          self->GameScoreTitleSettings.posX, self->GameScoreTitleSettings.posY, */
+  /*          self->GameScoreTitleSettings.size, */
+  /*          self->GameScoreTitleSettings.color); */
+  DrawText(TextFormat("%i", game.score), self->GameScoreTitleSettings.posX,
+           self->GameScoreTitleSettings.posY, self->GameScoreTitleSettings.size,
+           self->GameScoreTitleSettings.color);
+
+  printf("The score is %d\n", self->score);
+
+  /* Draw the game creator name. */
+  DrawText(
+      self->GameCreatorTitleSettings.title, self->GameCreatorTitleSettings.posX,
+      self->GameCreatorTitleSettings.posY, self->GameCreatorTitleSettings.size,
+      self->GameCreatorTitleSettings.color);
 }

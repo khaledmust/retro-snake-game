@@ -41,6 +41,7 @@ int main(void) {
 
     game.Draw(&game);
 
+
     if (IsKeyPressed(KEY_UP) && game.snake.direction.y != 1) {
       game.snake.direction = SnakeDirection[NORTH];
     }

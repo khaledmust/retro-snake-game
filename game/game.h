@@ -10,6 +10,14 @@
 #define OFFSET 75
 #define BORDER_THICKNESS 5
 
+typedef struct title_settings {
+  char * title;
+  int posX;
+  int posY;
+  int size;
+  Color color;
+}TitleSettings;
+
 /**
  * @struct Game
  * @brief Represents the game state and components.
@@ -25,6 +33,7 @@ typedef struct object_game {
   Food food;   /**< The Food game object representing the in-game food. */
   double speed;
   double last_update_time;
+  unsigned int score;
   void (*CheckCollisionFood)(
       struct object_game
           *self); /**< Function pointer for checking collision with food. */
@@ -35,6 +44,9 @@ typedef struct object_game {
                                                the game state. */
   bool (*SetSpeed)(struct object_game *);
   void (*Draw)(struct object_game *);
+  TitleSettings GameTitleSettings;
+  TitleSettings GameScoreTitleSettings;
+  TitleSettings GameCreatorTitleSettings;
 } Game;
 
 void Game_Init(Game *self);
